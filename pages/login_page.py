@@ -2,7 +2,7 @@ from playwright.sync_api import Page, expect
 
 
 class LoginPage:
-    URL = "https://saucedemo.com"
+    URL = "https://www.saucedemo.com/"
 
     def __init__(self, page: Page):
         self.page = page
@@ -20,4 +20,4 @@ class LoginPage:
         self.login_button.click()
 
     def assert_login_success(self):
-        expect(self.page).to_have_url("https://saucedemo.cominventory.html")
+        expect(self.page).to_have_url("https://www.saucedemo.com/inventory.html")
