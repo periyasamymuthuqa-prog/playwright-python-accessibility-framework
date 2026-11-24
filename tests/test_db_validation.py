@@ -13,3 +13,4 @@ def test_active_qa_lead_exists_in_db(db_connection):
 
     assert row is not None, "Expected an active QA_Lead user in database"
     assert row[0] == "standard_user"
+    assert row[1] == "QA_Lead"
